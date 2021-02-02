@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:ems="10"
+            android:gravity="center"
+            android:onClick="onClickSearch"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:onClick="onClickBtn"
+            android:text="Search" />
+
+        <Button
+            android:id="@+id/favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="onClickFavorites"
+            android:text="Favorites" />
+    </FrameLayout>
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bn_main"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        app:itemIconTint="@color/colorAccent"-->
+<!--        app:itemTextColor="@color/cardview_light_background"-->
+<!--        app:menu="@menu/bottom_menu" />-->
+
+</RelativeLayout>

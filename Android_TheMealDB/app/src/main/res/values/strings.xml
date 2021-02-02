@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Food Search</string>
+    <string name="home">Home</string>
+    <string name="seafood">Seafood</string>
+    <string name="dessert">Dessert</string>
+    <string name="vegan">Vegan</string>
+</resources>
